@@ -15,6 +15,7 @@
 /* Links */
 a, a:link, a:visited {
   text-decoration: none;
+  padding: 0;
 }
 
 a:hover {
@@ -101,7 +102,65 @@ a:hover {
   color: #D4C17F;
 }
 
+.wrapper {
+  width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 74px;
   min-height: 840px;
   background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("./../img/header/header-bg.jpg");
+}
+.header__navigation {
+  font-size: 14px;
+}
+.header__list {
+  display: flex;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.header__title {
+  position: relative;
+  text-align: center;
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
+  color: #D4C17F;
+  font-weight: 700;
+  padding-bottom: 81px;
+}
+.header__title-icon {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50% 0%);
+}
+.header__info {
+  position: relative;
+  font-size: 18px;
+  padding-left: 35px;
+}
+.header__footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  justify-items: center;
+}
+.header__info {
+  display: flex;
+  gap: 14px;
+}
+.header__phone {
+  display: flex;
+  gap: 14px;
+}
+.header__top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
